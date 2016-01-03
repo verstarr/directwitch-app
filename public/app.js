@@ -10,23 +10,31 @@ $( document ).ready(function() {
 			    // error encountered while loading
 			    console.log(error);
 			  }
+
+
+
 			  // the sdk is now loaded
 			  if (status.authenticated) {
 			    // user is currently logged in
 			    // Already logged in, hide button
 	  			$('.twitch-connect').hide()
 	  			$('.twitch-loggedin').show()
-	  			$('.twitch-live-channel').show()
-			  }
-			  else {
-			  	$('.twitch-loggedin').hide()
-			  	$('.twitch-live-channel').hide()
-			  }
-			  $.get("https://api.twitch.tv/kraken/users/versizzle", function(data){
-			    	console.log(data)
+	  			$.get("https://api.twitch.tv/kraken/users/versizzle", function(data){
 			    	$(".twitch-loggedin").append(data.name.toUpperCase())
 			    	$(".twitch-pic").append('<img src="' + data.logo +'" style="width: 5%; height: 5%"/>')
 			    });
+			  }
+			  else {
+			  	$('.twitch-loggedin').hide()
+			  }
+
+
+			  $.get("https://api.twitch.tv/kraken/streams?game=League+of+Legends", function(data){
+			  		console.log(data.streams[2].channel.name)
+			  		//var twitchURL = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
+			  		//console.log(twitchURL)
+			  		document.getElementById('twitch-live_channel').src = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
+			  });
 	  	});
 
 
@@ -35,9 +43,7 @@ $( document ).ready(function() {
 	    scope: ['user_read', 'channel_read']
 	  });
 	})
-});
-
-		//If we are a stb, set the resolution
+    //If we are a stb, set the resolution
 		if (!!navigator.setResolution) {
 		  navigator.setResolution(1920, 1080);
 		}
@@ -54,17 +60,54 @@ $( document ).ready(function() {
 			//Fall through like it does below.
 			switch(code)	{	
 		        case 13: // Select / Enter
-		        	console.log("I pressed 13");
 		        case 48 : // 0
 		        case 49 : // 1
+		        	window.location.replace("index.html");
+		        	break;
 		        case 50 : // 2
+		        	window.location.replace("messenger.html");
+		        	break;
 		        case 51 : // 3
+		        	window.location.replace("weather.html");
+		        	break;
 		        case 52 : // 4
+		        	window.location.replace("stock.html");
+		        	break;
 		        case 53 : // 5
+		        	window.location.replace("sports.html");
+		        	break;
 		        case 54 : // 6
+		        	$.get("https://api.twitch.tv/kraken/streams?game=League+of+Legends", function(data){
+				  		console.log(data.streams[2].channel.name)
+				  		//var twitchURL = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
+				  		//console.log(twitchURL)
+				  		document.getElementById('twitch-live_channel').src = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
+				  	});
+				  	break;
 		        case 55 : // 7
+		        	$.get("https://api.twitch.tv/kraken/streams?game=Dota+2", function(data){
+				  		console.log(data.streams[2].channel.name)
+				  		//var twitchURL = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
+				  		//console.log(twitchURL)
+				  		document.getElementById('twitch-live_channel').src = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
+				  	});
+				  	break;
 		        case 56 : // 8
+		        	$.get("https://api.twitch.tv/kraken/streams?game=Hearthstone%3A%20Heroes%20of%20Warcraft", function(data){
+				  		console.log(data.streams[2].channel.name)
+				  		//var twitchURL = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
+				  		//console.log(twitchURL)
+				  		document.getElementById('twitch-live_channel').src = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
+				  	});
+				  	break;
 		        case 57 : // 9
+		        	$.get("https://api.twitch.tv/kraken/streams?game=Counter-Strike%3A%20Global%20Offensive", function(data){
+				  		console.log(data.streams[2].channel.name)
+				  		//var twitchURL = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
+				  		//console.log(twitchURL)
+				  		document.getElementById('twitch-live_channel').src = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
+				  	});
+				  	break;
 		        case 79 : // Info
 		        case 87 : // Rewind Trick play
 		        case 9 : // FF Trick play
@@ -108,3 +151,7 @@ $( document ).ready(function() {
 		   console.log(errorMsg);
 		   return true;
 		 };
+
+});
+
+		
