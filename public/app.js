@@ -16,13 +16,19 @@ $( document ).ready(function() {
 			    // Already logged in, hide button
 	  			$('.twitch-connect').hide()
 	  			$('.twitch-loggedin').show()
-	  			$('.twitch-showlogo').show()
+	  			$('.twitch-live-channel').show()
 			  }
 			  else {
 			  	$('.twitch-loggedin').hide()
-			  	$('.twitch-showlogo').hide()
+			  	$('.twitch-live-channel').hide()
 			  }
+			  $.get("https://api.twitch.tv/kraken/users/versizzle", function(data){
+			    	console.log(data)
+			    	$(".twitch-loggedin").append(data.name.toUpperCase())
+			    	$(".twitch-pic").append('<img src="' + data.logo +'" style="width: 5%; height: 5%"/>')
+			    });
 	  	});
+
 
     $('.twitch-connect').click(function() {
 	  Twitch.login({
@@ -36,6 +42,10 @@ $( document ).ready(function() {
 		  navigator.setResolution(1920, 1080);
 		}
 
+
+
+		var player = document.getElementById('twitchSample');
+
 		function keyHandler(e){
 			var code = e.keyCode
 				, container = document.getElementById('key-down');
@@ -44,6 +54,7 @@ $( document ).ready(function() {
 			//Fall through like it does below.
 			switch(code)	{	
 		        case 13: // Select / Enter
+		        	console.log("I pressed 13");
 		        case 48 : // 0
 		        case 49 : // 1
 		        case 50 : // 2
