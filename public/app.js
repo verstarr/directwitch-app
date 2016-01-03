@@ -29,15 +29,15 @@ $( document ).ready(function() {
 			  }
 
 
-			  //$.get("https://api.twitch.tv/kraken/streams?game=League+of+Legends", function(data){
+			  $.get("https://api.twitch.tv/kraken/streams?game=League+of+Legends", function(data){
 			  		console.log(data.streams[2].channel.name)
 			  		//var twitchURL = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
 			  		//console.log(twitchURL)
-			  		//document.getElementById('twitch-live-channel').src = "http://player.twitch.tv/?channel=" + data.streams[2].channel.name + "&html5";
+			  		document.getElementById('twitch-live-channel').src = "http://player.twitch.tv/?channel=" + data.streams[2].channel.name;
 			  	//	document.getElementById('videoSample').src = "http://player.twitch.tv/" + data.streams[2].channel.name + "/hls";
 			  		//document.getElementById('videoSample').src = "http://player.twitch.tv/?channel=" + data.streams[2].channel.name + "&html5";
 			  		//http://player.twitch.tv/?channel=lirik&html5
-			  //});
+			  });
 	  	});
 
 
