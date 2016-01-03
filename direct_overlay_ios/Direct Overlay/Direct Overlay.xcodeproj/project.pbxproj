@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		961D57301C3935DF00522F18 /* Direct Overlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Direct Overlay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		961D57301C3935DF00522F18 /* DirecTV Overlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DirecTV Overlay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		961D57341C3935DF00522F18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		961D57361C3935DF00522F18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		961D57371C3935DF00522F18 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 		961D57311C3935DF00522F18 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				961D57301C3935DF00522F18 /* Direct Overlay.app */,
+				961D57301C3935DF00522F18 /* DirecTV Overlay.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,7 +111,7 @@
 			);
 			name = "Direct Overlay";
 			productName = "Direct Overlay";
-			productReference = 961D57301C3935DF00522F18 /* Direct Overlay.app */;
+			productReference = 961D57301C3935DF00522F18 /* DirecTV Overlay.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -125,6 +125,7 @@
 				TargetAttributes = {
 					961D572F1C3935DF00522F18 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WE22Z6FK5U;
 					};
 				};
 			};
@@ -283,10 +284,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Direct Overlay/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thedevteam.directoverlay;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "DirecTV Overlay";
 			};
 			name = Debug;
 		};
@@ -294,10 +296,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Direct Overlay/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thedevteam.directoverlay;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "DirecTV Overlay";
 			};
 			name = Release;
 		};
@@ -320,6 +323,7 @@
 				961D57491C3935DF00522F18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

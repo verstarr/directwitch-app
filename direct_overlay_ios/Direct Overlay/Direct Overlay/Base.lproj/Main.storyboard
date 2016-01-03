@@ -29,6 +29,34 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="771"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wCs-Rx-W96">
+                                        <rect key="frame" x="0.0" y="107" width="77" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <connections>
+                                            <action selector="btnTwitch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dxu-eu-z2n"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="74U-F5-JTf">
+                                        <rect key="frame" x="0.0" y="313" width="77" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <connections>
+                                            <action selector="btnSocialMedia:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cHg-rD-Yff"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CzN-qQ-JXG">
+                                        <rect key="frame" x="0.0" y="480" width="77" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <connections>
+                                            <action selector="btnNews:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SO3-Yf-Aef"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vrc-Gf-sXF">
+                                        <rect key="frame" x="0.0" y="700" width="77" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <connections>
+                                            <action selector="btnSports:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wOE-Lk-AUK"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="QUT-Rl-iHp"/>
