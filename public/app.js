@@ -29,12 +29,15 @@ $( document ).ready(function() {
 			  }
 
 
-			  $.get("https://api.twitch.tv/kraken/streams?game=League+of+Legends", function(data){
+			  //$.get("https://api.twitch.tv/kraken/streams?game=League+of+Legends", function(data){
 			  		console.log(data.streams[2].channel.name)
 			  		//var twitchURL = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
 			  		//console.log(twitchURL)
-			  		document.getElementById('twitch-live_channel').src = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
-			  });
+			  		//document.getElementById('twitch-live-channel').src = "http://player.twitch.tv/?channel=" + data.streams[2].channel.name + "&html5";
+			  	//	document.getElementById('videoSample').src = "http://player.twitch.tv/" + data.streams[2].channel.name + "/hls";
+			  		//document.getElementById('videoSample').src = "http://player.twitch.tv/?channel=" + data.streams[2].channel.name + "&html5";
+			  		//http://player.twitch.tv/?channel=lirik&html5
+			  //});
 	  	});
 
 
@@ -77,36 +80,36 @@ $( document ).ready(function() {
 		        	window.location.replace("sports.html");
 		        	break;
 		        case 54 : // 6
-		        	$.get("https://api.twitch.tv/kraken/streams?game=League+of+Legends", function(data){
+		        	//$.get("https://api.twitch.tv/kraken/streams?game=League+of+Legends", function(data){
 				  		console.log(data.streams[2].channel.name)
 				  		//var twitchURL = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
 				  		//console.log(twitchURL)
-				  		document.getElementById('twitch-live_channel').src = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
-				  	});
-				  	break;
+				  	//	document.getElementById('twitch-live_channel').src = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
+				  	//});
+				  	//break;
 		        case 55 : // 7
-		        	$.get("https://api.twitch.tv/kraken/streams?game=Dota+2", function(data){
+		        	//$.get("https://api.twitch.tv/kraken/streams?game=Dota+2", function(data){
 				  		console.log(data.streams[2].channel.name)
 				  		//var twitchURL = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
 				  		//console.log(twitchURL)
-				  		document.getElementById('twitch-live_channel').src = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
-				  	});
+				  	//	document.getElementById('twitch-live_channel').src = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
+				  	//});
 				  	break;
 		        case 56 : // 8
-		        	$.get("https://api.twitch.tv/kraken/streams?game=Hearthstone%3A%20Heroes%20of%20Warcraft", function(data){
+		        	//$.get("https://api.twitch.tv/kraken/streams?game=Hearthstone%3A%20Heroes%20of%20Warcraft", function(data){
 				  		console.log(data.streams[2].channel.name)
 				  		//var twitchURL = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
 				  		//console.log(twitchURL)
-				  		document.getElementById('twitch-live_channel').src = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
-				  	});
+				  	//	document.getElementById('twitch-live_channel').src = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
+				  	//});
 				  	break;
 		        case 57 : // 9
-		        	$.get("https://api.twitch.tv/kraken/streams?game=Counter-Strike%3A%20Global%20Offensive", function(data){
+		        	//$.get("https://api.twitch.tv/kraken/streams?game=Counter-Strike%3A%20Global%20Offensive", function(data){
 				  		console.log(data.streams[2].channel.name)
 				  		//var twitchURL = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
 				  		//console.log(twitchURL)
-				  		document.getElementById('twitch-live_channel').src = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
-				  	});
+				  	//	document.getElementById('twitch-live_channel').src = "http://www.twitch.tv/" + data.streams[2].channel.name + "/embed";
+				  	//});
 				  	break;
 		        case 79 : // Info
 		        case 87 : // Rewind Trick play
