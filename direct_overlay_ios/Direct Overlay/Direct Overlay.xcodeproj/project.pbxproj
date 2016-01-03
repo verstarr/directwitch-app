@@ -17,6 +17,7 @@
 		961D57501C393ED200522F18 /* watch_on_phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 961D574E1C393ED200522F18 /* watch_on_phone.png */; };
 		961D57511C393ED200522F18 /* browse_for_tv.png in Resources */ = {isa = PBXBuildFile; fileRef = 961D574F1C393ED200522F18 /* browse_for_tv.png */; };
 		961D57531C39441100522F18 /* sliding_drawer.png in Resources */ = {isa = PBXBuildFile; fileRef = 961D57521C39441100522F18 /* sliding_drawer.png */; };
+		961D57551C395BE700522F18 /* widgets.png in Resources */ = {isa = PBXBuildFile; fileRef = 961D57541C395BE700522F18 /* widgets.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		961D574E1C393ED200522F18 /* watch_on_phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = watch_on_phone.png; sourceTree = "<group>"; };
 		961D574F1C393ED200522F18 /* browse_for_tv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = browse_for_tv.png; sourceTree = "<group>"; };
 		961D57521C39441100522F18 /* sliding_drawer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliding_drawer.png; sourceTree = "<group>"; };
+		961D57541C395BE700522F18 /* widgets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = widgets.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		961D57331C3935DF00522F18 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				961D57541C395BE700522F18 /* widgets.png */,
 				961D57521C39441100522F18 /* sliding_drawer.png */,
 				961D574E1C393ED200522F18 /* watch_on_phone.png */,
 				961D574F1C393ED200522F18 /* browse_for_tv.png */,
@@ -153,6 +156,7 @@
 				961D574B1C393C2900522F18 /* launch_screen.png in Resources */,
 				961D57511C393ED200522F18 /* browse_for_tv.png in Resources */,
 				961D57501C393ED200522F18 /* watch_on_phone.png in Resources */,
+				961D57551C395BE700522F18 /* widgets.png in Resources */,
 				961D57531C39441100522F18 /* sliding_drawer.png in Resources */,
 				961D573E1C3935DF00522F18 /* Main.storyboard in Resources */,
 			);
