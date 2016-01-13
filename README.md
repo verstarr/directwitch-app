@@ -18,3 +18,5 @@ Press the following buttons that similate pressing the same buttons on the remot
   7: Loads the most viewed Dota2 stream<br>
   8: Loads the most viewed HeartStone stream<br>
   9: Loads the most viewed Counter Strike: GO stream<br>
+  
+  The direct_tv_overlay_ios folder contains an ios app that is able to use DTV's REST api to make controller commands to the STB. Must have app running on DTV set top box.
