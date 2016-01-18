@@ -1,7 +1,7 @@
 # Overlay for DirecTV
 Simple HTML5 app for the DirecTV Set Top Box
 
-Utilizes common languages and tools of the Internet, such as HTML and Javascript, and DirecTV's HTML5 platform, this app enables a user to view their favorite video games and streams without disrupting their television broadcast. Other widgets are included (Sampmle videos). Overlay widgets over your normal TV program.
+Utilizes common languages and tools of the Internet, such as HTML and Javascript, and DirecTV's HTML5 platform, this app enables a user to view their favorite video games and streams without disrupting their television broadcast. Other widgets are included (Sample videos). Overlay widgets over your normal TV program.
 
 To RUN: navigate to the public directory and run the following:
   npm install
